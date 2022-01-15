@@ -8,6 +8,20 @@ app.get('/', (req , res) =>{
     res.send('Hello World!')
 })
 
+app.post('/',function(req , res){
+    res.send('Got a post request')
+})
+
+
+app.put('/',function(req , res){
+    res.send('Got a put request')
+})
+
+app.delete('/',function(res ,res){
+    res.end('Got a Delete request at /user')
+})
+
+
 
 
 app.listen(port , () =>{
